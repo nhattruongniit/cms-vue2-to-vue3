@@ -5,13 +5,12 @@
       :headers="headers"
       :items="desserts"
       :items-per-page="5"
-      class="elevation-1"
     ></v-data-table>
 
 
     <h3>This is button</h3>
     <v-btn
-      fab
+      class="rounded-circle"
     >dsds</v-btn>
   </div>
  
@@ -24,16 +23,16 @@ export default {
     return {
       headers: [
         {
-          text: 'Dessert (100g serving)',
+          title: 'Dessert (100g serving)',
           align: 'start',
           sortable: false,
           value: 'name',
         },
-        { text: 'Calories', value: 'calories' },
-        { text: 'Fat (g)', value: 'fat' },
-        { text: 'Carbs (g)', value: 'carbs' },
-        { text: 'Protein (g)', value: 'protein' },
-        { text: 'Iron (%)', value: 'iron' },
+        { title: 'Calories', value: 'calories' },
+        { title: 'Fat (g)', value: 'fat' },
+        { title: 'Carbs (g)', value: 'carbs' },
+        { title: 'Protein (g)', value: 'protein' },
+        { title: 'Iron (%)', value: 'iron' },
       ],
       desserts: [
         {
